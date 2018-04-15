@@ -73,14 +73,17 @@
 
 
 
+<meta name="description" content="清除浮动元素浮动后,浮动元素就会不占原来的位置(也就是脱离文档流了);.导致了父元素的高度为0; 第一种方法:​    就是给浮动元素的父元素设置个固定的高  优点:方法简单 便于理解  缺点:当我们浮动的元素高度不是原来的高度的 我们要一个的修改;不利于后期维护 ​   第二种方法​    就是在浮动元素的后面加上&amp;lt;br /&amp;gt;给换行符加上clear:both .parent &amp;#12">
 <meta property="og:type" content="article">
-<meta property="og:title" content="css常见问题">
-<meta property="og:url" content="http://yoursite.com/2018/04/12/css常见问题/index.html">
+<meta property="og:title" content="清除浮动">
+<meta property="og:url" content="http://yoursite.com/2018/04/15/清除浮动/index.html">
 <meta property="og:site_name" content="longlog">
+<meta property="og:description" content="清除浮动元素浮动后,浮动元素就会不占原来的位置(也就是脱离文档流了);.导致了父元素的高度为0; 第一种方法:​    就是给浮动元素的父元素设置个固定的高  优点:方法简单 便于理解  缺点:当我们浮动的元素高度不是原来的高度的 我们要一个的修改;不利于后期维护 ​   第二种方法​    就是在浮动元素的后面加上&amp;lt;br /&amp;gt;给换行符加上clear:both .parent &amp;#12">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-04-12T13:27:22.939Z">
+<meta property="og:updated_time" content="2018-04-15T15:31:16.946Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="css常见问题">
+<meta name="twitter:title" content="清除浮动">
+<meta name="twitter:description" content="清除浮动元素浮动后,浮动元素就会不占原来的位置(也就是脱离文档流了);.导致了父元素的高度为0; 第一种方法:​    就是给浮动元素的父元素设置个固定的高  优点:方法简单 便于理解  缺点:当我们浮动的元素高度不是原来的高度的 我们要一个的修改;不利于后期维护 ​   第二种方法​    就是在浮动元素的后面加上&amp;lt;br /&amp;gt;给换行符加上clear:both .parent &amp;#12">
 
 
 
@@ -110,13 +113,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2018/04/12/css常见问题/"/>
+  <link rel="canonical" href="http://yoursite.com/2018/04/15/清除浮动/"/>
 
 
 
 
 
-  <title>css常见问题 | longlog</title>
+  <title>清除浮动 | longlog</title>
   
 
 
@@ -243,7 +246,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/12/css常见问题/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2018/04/15/清除浮动/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="longlog">
@@ -260,7 +263,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">css常见问题</h1>
+          <h1 class="post-title" itemprop="name headline">清除浮动</h1>
         
 
         <div class="post-meta">
@@ -272,8 +275,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-12T21:27:22+08:00">
-                2018-04-12
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-04-15T22:12:49+08:00">
+                2018-04-15
               </time>
             
 
@@ -310,7 +313,41 @@
       
 
       
-        
+        <h3 id="清除浮动"><a href="#清除浮动" class="headerlink" title="清除浮动"></a>清除浮动</h3><p><strong>元素浮动后,浮动元素就会不占原来的位置(也就是脱离文档流了);.导致了父元素的高度为0;</strong></p>
+<h5 id="第一种方法"><a href="#第一种方法" class="headerlink" title="第一种方法:"></a>第一种方法:</h5><p>​    就是给浮动元素的父元素设置个固定的高</p>
+<ul>
+<li><p><strong>优点:</strong>方法简单 便于理解</p>
+</li>
+<li><p><strong>缺点:</strong>当我们浮动的元素高度不是原来的高度的 我们要一个的修改;不利于后期维护</p>
+<p>​</p>
+</li>
+</ul>
+<h5 id="第二种方法"><a href="#第二种方法" class="headerlink" title="第二种方法"></a>第二种方法</h5><p>​    就是在浮动元素的后面加上<code>&lt;br /&gt;</code>给换行符加上<code>clear:both</code></p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.parent</span> &#123;</span><br><span class="line">  <span class="attribute">background</span>:skyblue;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.son</span> &#123;</span><br><span class="line">  <span class="attribute">float</span>: left;</span><br><span class="line">  <span class="attribute">background</span>: red;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-tag">br</span> &#123;</span><br><span class="line">  <span class="attribute">clear</span>: both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"parent"</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>= <span class="string">"son"</span>&gt;</span>1<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>= <span class="string">"son"</span>&gt;</span>2<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>= <span class="string">"son"</span>&gt;</span>3<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>= <span class="string">"son"</span>&gt;</span>4<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">br</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>优点:</strong>方法简单 便于理解</li>
+<li><strong>缺点:</strong>会增加很多的没有用处的标签</li>
+</ul>
+<h5 id="第三种方法"><a href="#第三种方法" class="headerlink" title="第三种方法"></a>第三种方法</h5><p>给父元素加上<code>overflow:hidden</code>来让父元素触发BFC(块级元素格式化上下文)</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.parent</span> &#123;</span><br><span class="line">	<span class="attribute">overflow</span>:hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>优点:</strong>代码量极少</li>
+<li><strong>缺点:</strong>当父元素的的内容增多时就隐藏超出的内容</li>
+</ul>
+<h5 id="第四种方法"><a href="#第四种方法" class="headerlink" title="第四种方法"></a>第四种方法</h5><p>利用伪元素来清除浮动</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>: <span class="string">""</span>;</span><br><span class="line">  <span class="attribute">display</span>:block;</span><br><span class="line">  <span class="attribute">clear</span>: both;</span><br><span class="line">  <span class="attribute">height</span>:<span class="number">0</span>;</span><br><span class="line">  <span class="attribute">visibility</span>: hidden;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>优点:</strong>结构语义化 代码量适中</li>
+<li><strong>缺点:</strong>不支持低版本浏览器</li>
+</ul>
+<h5 id="第五中方法"><a href="#第五中方法" class="headerlink" title="第五中方法"></a>第五中方法</h5><p>利用双伪元素来清除浮动</p>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::before</span>,</span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">content</span>:<span class="string">""</span>;</span><br><span class="line">  <span class="attribute">display</span>:table;</span><br><span class="line">&#125;</span><br><span class="line"><span class="selector-class">.clearfix</span><span class="selector-pseudo">::after</span> &#123;</span><br><span class="line">  <span class="attribute">clear</span>:both;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<ul>
+<li><strong>优点:</strong>结构语义化正确</li>
+<li><strong>缺点:</strong>不支持低版本浏览器</li>
+</ul>
+
       
     </div>
     
@@ -334,8 +371,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/04/02/hexo建站/" rel="next" title="Hexo建站">
-                <i class="fa fa-chevron-left"></i> Hexo建站
+              <a href="/2018/04/13/高级程序设计阅读笔记/" rel="next" title="高级程序设计阅读笔记">
+                <i class="fa fa-chevron-left"></i> 高级程序设计阅读笔记
               </a>
             
           </div>
@@ -343,10 +380,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/13/高级程序设计阅读笔记/" rel="prev" title="高级程序设计阅读笔记">
-                高级程序设计阅读笔记 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -398,8 +431,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -418,7 +460,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -461,6 +503,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#清除浮动"><span class="nav-number">1.</span> <span class="nav-text">清除浮动</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#第一种方法"><span class="nav-number">1.0.1.</span> <span class="nav-text">第一种方法:</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第二种方法"><span class="nav-number">1.0.2.</span> <span class="nav-text">第二种方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第三种方法"><span class="nav-number">1.0.3.</span> <span class="nav-text">第三种方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第四种方法"><span class="nav-number">1.0.4.</span> <span class="nav-text">第四种方法</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#第五中方法"><span class="nav-number">1.0.5.</span> <span class="nav-text">第五中方法</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       

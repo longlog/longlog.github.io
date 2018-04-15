@@ -73,17 +73,17 @@
 
 
 
-<meta name="description" content="css与字体有关的的属性: 浏览器默认的font-size是16px;字体是微软雅黑  1font: font-style font-weight font-size font-family  ​   css的继承性:  text-align text-indent text-decoration; font-style font-size font-weight font-font-family">
+<meta name="description" content="css与字体有关的的属性: 浏览器默认的font-size是16px;字体是微软雅黑  font: font-style font-weight font-size font-family  ​   css的继承性:  text-align text-indent text-decoration; font-style font-size font-weight font-font-family;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="css笔记">
 <meta property="og:url" content="http://yoursite.com/2018/03/31/css笔记/index.html">
 <meta property="og:site_name" content="longlog">
-<meta property="og:description" content="css与字体有关的的属性: 浏览器默认的font-size是16px;字体是微软雅黑  1font: font-style font-weight font-size font-family  ​   css的继承性:  text-align text-indent text-decoration; font-style font-size font-weight font-font-family">
+<meta property="og:description" content="css与字体有关的的属性: 浏览器默认的font-size是16px;字体是微软雅黑  font: font-style font-weight font-size font-family  ​   css的继承性:  text-align text-indent text-decoration; font-style font-size font-weight font-font-family;">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-04-01T09:51:11.379Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="css笔记">
-<meta name="twitter:description" content="css与字体有关的的属性: 浏览器默认的font-size是16px;字体是微软雅黑  1font: font-style font-weight font-size font-family  ​   css的继承性:  text-align text-indent text-decoration; font-style font-size font-weight font-font-family">
+<meta name="twitter:description" content="css与字体有关的的属性: 浏览器默认的font-size是16px;字体是微软雅黑  font: font-style font-weight font-size font-family  ​   css的继承性:  text-align text-indent text-decoration; font-style font-size font-weight font-font-family;">
 
 
 
@@ -316,7 +316,7 @@
         <h2 id="css"><a href="#css" class="headerlink" title="css"></a>css</h2><h3 id="与字体有关的的属性"><a href="#与字体有关的的属性" class="headerlink" title="与字体有关的的属性:"></a>与字体有关的的属性:</h3><ol>
 <li><p>浏览器默认的font-size是16px;字体是微软雅黑</p>
 </li>
-<li><figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">font</span>: <span class="selector-tag">font-style</span> <span class="selector-tag">font-weight</span> <span class="selector-tag">font-size</span> <span class="selector-tag">font-family</span></span><br></pre></td></tr></table></figure>
+<li><figure class="highlight css"><table><tr><td class="code"><pre><span class="line"><span class="selector-tag">font</span>: <span class="selector-tag">font-style</span> <span class="selector-tag">font-weight</span> <span class="selector-tag">font-size</span> <span class="selector-tag">font-family</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>​</p>
 </li>
@@ -338,8 +338,8 @@
 <pre><code>  1. 判断能不能选择我们所需的标签
 2. 在判断权重
 </code></pre><p><strong>权重的公式</strong></p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">(0,0,0,0)</span><br><span class="line">(!<span class="selector-tag">important</span>个数, <span class="selector-tag">id</span>选择器的个数,类选择的个数,标签选择器的个数)</span><br></pre></td></tr></table></figure>
-<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css">  <span class="comment">/* 0 , 0 , 0 ,2*/</span></span></span><br><span class="line"><span class="undefined">	div p&#123;  </span></span><br><span class="line"><span class="css">			<span class="selector-tag">color</span><span class="selector-pseudo">:red</span>;</span></span><br><span class="line"><span class="undefined">		&#125;</span></span><br><span class="line"><span class="css">  <span class="comment">/*0,1,0,0*/</span></span></span><br><span class="line"><span class="css">		<span class="selector-id">#father</span>&#123;</span></span><br><span class="line"><span class="css">			<span class="selector-tag">color</span><span class="selector-pseudo">:red</span>;</span></span><br><span class="line"><span class="undefined">		</span></span><br><span class="line"><span class="undefined">		&#125; </span></span><br><span class="line"><span class="css">  <span class="comment">/*0,0,1,1*/</span></span></span><br><span class="line"><span class="css">		<span class="selector-tag">p</span><span class="selector-class">.c2</span>&#123;  </span></span><br><span class="line"><span class="css">			<span class="selector-tag">color</span><span class="selector-pseudo">:blue</span>;</span></span><br><span class="line"><span class="undefined">		&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"father"</span> <span class="attr">class</span>=<span class="string">"c1"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"c2"</span>&gt;</span></span><br><span class="line">			试问这行字体是什么颜色的？</span><br><span class="line">		<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight css"><table><tr><td class="code"><pre><span class="line">(0,0,0,0)</span><br><span class="line">(!<span class="selector-tag">important</span>个数, <span class="selector-tag">id</span>选择器的个数,类选择的个数,标签选择器的个数)</span><br></pre></td></tr></table></figure>
+<figure class="highlight html"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css">  <span class="comment">/* 0 , 0 , 0 ,2*/</span></span></span><br><span class="line"><span class="undefined">	div p&#123;  </span></span><br><span class="line"><span class="css">			<span class="selector-tag">color</span><span class="selector-pseudo">:red</span>;</span></span><br><span class="line"><span class="undefined">		&#125;</span></span><br><span class="line"><span class="css">  <span class="comment">/*0,1,0,0*/</span></span></span><br><span class="line"><span class="css">		<span class="selector-id">#father</span>&#123;</span></span><br><span class="line"><span class="css">			<span class="selector-tag">color</span><span class="selector-pseudo">:red</span>;</span></span><br><span class="line"><span class="undefined">		</span></span><br><span class="line"><span class="undefined">		&#125; </span></span><br><span class="line"><span class="css">  <span class="comment">/*0,0,1,1*/</span></span></span><br><span class="line"><span class="css">		<span class="selector-tag">p</span><span class="selector-class">.c2</span>&#123;  </span></span><br><span class="line"><span class="css">			<span class="selector-tag">color</span><span class="selector-pseudo">:blue</span>;</span></span><br><span class="line"><span class="undefined">		&#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">"father"</span> <span class="attr">class</span>=<span class="string">"c1"</span>&gt;</span></span><br><span class="line">		<span class="tag">&lt;<span class="name">p</span> <span class="attr">class</span>=<span class="string">"c2"</span>&gt;</span></span><br><span class="line">			试问这行字体是什么颜色的？</span><br><span class="line">		<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">	<span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>浏览的的读取选择器的时候是从后往前读取的,</p>
 <blockquote>
 <p>如果选择器都是靠继承给标签添加样式话  那选择器找标签跟准确 就用谁的样式</p>
@@ -379,8 +379,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/28/清除浮动/" rel="next" title="清除浮动">
-                <i class="fa fa-chevron-left"></i> 清除浮动
+              <a href="/2018/03/27/html笔记/" rel="next" title="html笔记">
+                <i class="fa fa-chevron-left"></i> html笔记
               </a>
             
           </div>
@@ -472,7 +472,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
