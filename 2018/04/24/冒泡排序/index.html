@@ -73,17 +73,19 @@
 
 
 
-<meta name="description" content="冒泡排序:冒泡排序的步骤 相邻的元素之间相互比较,前一个数大于后一个数 ,则交换位置,当一个数与后面的数相互比较好后,则拿第二个数与后面的比较 直到排序完  var arr = [9, 32, 34, 22, 1, 0, 3]   for (var i = 0; i &amp;lt; arr.length; i++) &amp;#123;     for (var j = 0; j &amp;lt; arr.length">
+<meta name="description" content="冒泡排序:冒泡排序的步骤 相邻的元素之间相互比较,前一个数大于后一个数 ,则交换位置,当一个数与后面的数相互比较好后,则拿第二个数与后面的比较 直到排序完  var arr = [77,42,35,12,101,5]   for (var i = 0; i &amp;lt; arr.length; i++) &amp;#123;     for (var j = 0; j &amp;lt; arr.length; j++">
 <meta property="og:type" content="article">
 <meta property="og:title" content="冒泡排序">
 <meta property="og:url" content="http://yoursite.com/2018/04/24/冒泡排序/index.html">
 <meta property="og:site_name" content="longlog">
-<meta property="og:description" content="冒泡排序:冒泡排序的步骤 相邻的元素之间相互比较,前一个数大于后一个数 ,则交换位置,当一个数与后面的数相互比较好后,则拿第二个数与后面的比较 直到排序完  var arr = [9, 32, 34, 22, 1, 0, 3]   for (var i = 0; i &amp;lt; arr.length; i++) &amp;#123;     for (var j = 0; j &amp;lt; arr.length">
+<meta property="og:description" content="冒泡排序:冒泡排序的步骤 相邻的元素之间相互比较,前一个数大于后一个数 ,则交换位置,当一个数与后面的数相互比较好后,则拿第二个数与后面的比较 直到排序完  var arr = [77,42,35,12,101,5]   for (var i = 0; i &amp;lt; arr.length; i++) &amp;#123;     for (var j = 0; j &amp;lt; arr.length; j++">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-05-04T14:27:42.422Z">
+<meta property="og:image" content="http://p5inad25r.bkt.clouddn.com/a8134e61425961e578ec91dc4549e71.png">
+<meta property="og:updated_time" content="2018-05-05T14:17:11.287Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="冒泡排序">
-<meta name="twitter:description" content="冒泡排序:冒泡排序的步骤 相邻的元素之间相互比较,前一个数大于后一个数 ,则交换位置,当一个数与后面的数相互比较好后,则拿第二个数与后面的比较 直到排序完  var arr = [9, 32, 34, 22, 1, 0, 3]   for (var i = 0; i &amp;lt; arr.length; i++) &amp;#123;     for (var j = 0; j &amp;lt; arr.length">
+<meta name="twitter:description" content="冒泡排序:冒泡排序的步骤 相邻的元素之间相互比较,前一个数大于后一个数 ,则交换位置,当一个数与后面的数相互比较好后,则拿第二个数与后面的比较 直到排序完  var arr = [77,42,35,12,101,5]   for (var i = 0; i &amp;lt; arr.length; i++) &amp;#123;     for (var j = 0; j &amp;lt; arr.length; j++">
+<meta name="twitter:image" content="http://p5inad25r.bkt.clouddn.com/a8134e61425961e578ec91dc4549e71.png">
 
 
 
@@ -314,9 +316,11 @@
 
       
         <h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序:"></a>冒泡排序:</h3><h4 id="冒泡排序的步骤"><a href="#冒泡排序的步骤" class="headerlink" title="冒泡排序的步骤"></a>冒泡排序的步骤</h4><blockquote>
-<p>相邻的元素之间相互比较,前一个数大于后一个数 ,则交换位置,当一个数与后面的数相互比较好后,则拿第二个数与后面的比较 直到排序完</p>
+<p>相邻的元素之间相互比较,前一个数大于后一个数 ,则交换位置,当一个数与后面的数相互比较好后,则拿第二个数与后面的比较 直到排序完<img src="http://p5inad25r.bkt.clouddn.com/a8134e61425961e578ec91dc4549e71.png" alt="冒泡排序"></p>
 </blockquote>
-<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">9</span>, <span class="number">32</span>, <span class="number">34</span>, <span class="number">22</span>, <span class="number">1</span>, <span class="number">0</span>, <span class="number">3</span>]</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">     <span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; arr.length; j++) &#123;</span><br><span class="line">       <span class="keyword">if</span>( arr[j]&gt;arr[j+<span class="number">1</span>])&#123;</span><br><span class="line">         arr[j]=arr[j]^arr[j+<span class="number">1</span>];</span><br><span class="line">         arr[j+<span class="number">1</span>]=arr[j]^arr[j+<span class="number">1</span>];</span><br><span class="line">         arr[j]=arr[j]^arr[j+<span class="number">1</span>];</span><br><span class="line">       &#125;</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line"><span class="built_in">console</span>.log(arr);<span class="comment">//[0, 1, 3, 9, 22, 32, 34]</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">77</span>,<span class="number">42</span>,<span class="number">35</span>,<span class="number">12</span>,<span class="number">101</span>,<span class="number">5</span>]</span><br><span class="line">   <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</span><br><span class="line">     <span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; arr.length; j++) &#123;</span><br><span class="line">       <span class="keyword">if</span>( arr[j]&gt;arr[j+<span class="number">1</span>])&#123;</span><br><span class="line">         arr[j]=arr[j]^arr[j+<span class="number">1</span>];</span><br><span class="line">         arr[j+<span class="number">1</span>]=arr[j]^arr[j+<span class="number">1</span>];</span><br><span class="line">         arr[j]=arr[j]^arr[j+<span class="number">1</span>];</span><br><span class="line">       &#125;</span><br><span class="line">     &#125;</span><br><span class="line">   &#125;</span><br><span class="line"><span class="built_in">console</span>.log(arr);<span class="comment">//[5,12,35,42,77,101]</span></span><br></pre></td></tr></table></figure>
+<p>上面的代码还可以优化的 ,第二进行排序时候比较的次数就比前面的一次要少进行一次比较,当</p>
+<figure class="highlight js"><table><tr><td class="code"><pre><span class="line"><span class="keyword">var</span> arr = [<span class="number">77</span>,<span class="number">42</span>,<span class="number">35</span>,<span class="number">12</span>,<span class="number">101</span>,<span class="number">5</span>]</span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length<span class="number">-1</span>; i++) &#123;</span><br><span class="line">      <span class="keyword">for</span> (<span class="keyword">var</span> j = <span class="number">0</span>; j &lt; arr.length<span class="number">-1</span>-i; j++) &#123;</span><br><span class="line">        <span class="keyword">if</span>( arr[j]&gt;arr[j+<span class="number">1</span>])&#123;</span><br><span class="line">          arr[j]=arr[j]^arr[j+<span class="number">1</span>];</span><br><span class="line">          arr[j+<span class="number">1</span>]=arr[j]^arr[j+<span class="number">1</span>];</span><br><span class="line">          arr[j]=arr[j]^arr[j+<span class="number">1</span>];</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="built_in">console</span>.log(arr);<span class="comment">//[5,12,35,42,77,101]</span></span><br></pre></td></tr></table></figure>
 
       
     </div>
